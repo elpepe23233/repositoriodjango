@@ -1,4 +1,6 @@
+
 {% extends "index.html" %}
+{% load static %}
 {% block content %}cfff <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +11,12 @@
 </head>
 <body>
     hola pibes
+    <div class="d-flex align-items-center">
+        <img src="{% static 'img/images.jpg' %}" class="img-thumbnail" width="200px" alt="imagen">
+        <p class="ms-3">RED DEAD REDEMPTION 2 COMPRAR</p>
+    </div>
+    
+    
 </body>
 </html>
 {% endblock %}

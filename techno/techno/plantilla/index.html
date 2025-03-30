@@ -12,7 +12,7 @@
     
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">techno</a>
+        <a class="navbar-brand" href="{% url 'index' %}">techno</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,11 +25,23 @@
           </div>
         </div>
       </nav>
+  
+      <h1 style="background-color: rgb(71, 0, 138); color: rgb(0, 255, 13); text-align: center;">Techno, el mejor catálogo.</h1>
 
     {% block content %}
+    <center> 
+      <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/8X2kIfS6fb8?autoplay=1&mute=0&si=GuV7B_YzI6NejDyQ" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  </iframe>
+  
+    </center>
+    <center><h1>NUEVO JUEGO CYBERPUNK</h1></center>
     <p>HEllo WwwORldd index</p>
     <p>Hora y fecha actuales: {{esta_aludando}}</p>
     {% endblock %}
-    
+     <p style="background-color: rgb(97, 0, 136); color: rgb(0, 255, 13); text-align: center;"> Las mejores promociones.</p>
     </body>
     </html>

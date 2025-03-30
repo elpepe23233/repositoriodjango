@@ -20,9 +20,9 @@ from techno.views import saludo, despedida, fechita,inicio
 from . import views  
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('saludo/', saludo),
+    
     path('desp/', despedida),
     path('fecha/', fechita),
     path('inicio/',views.inicio, name='inicio'),
-    
+    path('index/', views.saludo, name='index'),
 ]

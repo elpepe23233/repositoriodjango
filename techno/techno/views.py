@@ -3,7 +3,7 @@ import datetime
 from django.template import Template, Context
 from django.template import loader
 from django.shortcuts import render
-
+"""
 def saludo (request):
     #"C:/Users/WELCOME/dj/techno/techno/plantilla/index.html"
 
@@ -14,6 +14,9 @@ def saludo (request):
     documento= doc_ext.render({"esta_aludando":hora})
     
     return HttpResponse(documento)
+    """
+def saludo(request):
+    return render (request,'index.html' )
 
 def despedida (request):
     return HttpResponse("Bueno chau")
