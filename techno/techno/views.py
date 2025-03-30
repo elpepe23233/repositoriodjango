@@ -17,6 +17,15 @@ def saludo (request):
     """
 def saludo(request):
     return render (request,'index.html' )
+def saludo (request):
+    #"C:/Users/WELCOME/dj/techno/techno/plantilla/index.html"
+
+    hora=datetime.datetime.now()
+
+    
+
+    
+    return render(request,'index.html',{"esta_aludando":hora})
 
 def despedida (request):
     return HttpResponse("Bueno chau")
@@ -35,3 +44,6 @@ def fechita(request):
 
 def inicio(request):
     return render (request,'inicio.html' )
+
+def productos(request):
+    return render (request,'productos.html' )

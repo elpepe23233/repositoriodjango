@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="{% url 'inicio' %}">Inicio <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Productos</a>
+            <a class="nav-item nav-link" href="{% url 'productos' %}">Productos</a>
             <a class="nav-item nav-link" href="#">Promociones</a>
             <a class="nav-item nav-link disabled" href="#">Nuevos articulos</a>
           </div>
@@ -41,6 +41,7 @@
     <center><h1>NUEVO JUEGO CYBERPUNK</h1></center>
     <p>HEllo WwwORldd index</p>
     <p>Hora y fecha actuales: {{esta_aludando}}</p>
+    
     {% endblock %}
      <p style="background-color: rgb(97, 0, 136); color: rgb(0, 255, 13); text-align: center;"> Las mejores promociones.</p>
     </body>

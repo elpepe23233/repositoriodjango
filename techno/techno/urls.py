@@ -25,4 +25,5 @@ urlpatterns = [
     path('fecha/', fechita),
     path('inicio/',views.inicio, name='inicio'),
     path('index/', views.saludo, name='index'),
+    path('productos/', views.productos, name='productos'),
 ]
